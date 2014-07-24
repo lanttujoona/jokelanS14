@@ -281,10 +281,23 @@ Footer
 	padding-left: 30px;
 }
 
+.footer-widget .row {
+	padding-left: 15px;
+	padding-bottom: 25px;
+
+}
+
+.footer-widget h3{
+	font-family: 'Press Start 2P',cursive;
+	font-size:	25px;
+}
+
 .footer-content {
 	float: left;
 	text-align: center;
 }
+
+
 
 /*
 Commentlist
@@ -341,6 +354,74 @@ ol.commentlist li ul {
 }
 .reply p {
   margin: 0
+}
+
+/* Facebook widget */
+
+
+#facebook_status_box 
+{
+	width: auto;
+	height: 285px;
+	margin-right: 30px;
+	background: none;
+}
+
+#facebook_status_box #facebook_canvas
+{
+	width: auto;
+	height: 280px;
+}
+
+#facebook_status_box h2
+{
+	display: none;
+}
+
+#facebook_status_box .fb_comment
+{
+	display: none;
+}
+#facebook_status_box .fb_post .fb_commLink
+{
+	background: none;
+	padding: 0;
+	position: relative;
+	top: -20px;
+	right: 30px;
+}
+
+#facebook_status_box .fb_post .fb_photoblock
+{
+	border: 0;
+	padding: 0;
+}
+
+#facebook_status_box .fb_post .fb_msg
+{
+	border: 0;
+	padding: 0;
+}
+
+#facebook_status_box .fb_post
+{
+	border-radius: 0px;
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+
+#facebook_status_box .fb_post p
+{
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px !important;
+	color: #ececec;
+
+}
+
+#facebook_status_box img
+{
+	display: none;
 }
 
 

@@ -22,7 +22,7 @@ function bst_widgets_init() {
         'name' => __( 'Footer', 'bst' ),
         'id' => 'footer-widget-area',
         'description' => __( 'The footer widget area', 'bst' ),
-        'before_widget' => '<div class="%1$s %2$s col-sm-4">',
+        'before_widget' => '<div class="%1$s %2$s col-sm-5">',
         'after_widget' => '</div>',
         'before_title' => '<h3>',
         'after_title' => '</h3>',
