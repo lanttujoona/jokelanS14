@@ -1,0 +1,512 @@
+/*
+Navbar "hovernav" dropdown menu - this works only for screen sizes larger than phones.
+The Bootstrap CSS is unchanged. If you don't want this, delete this segment of the CSS
+and delete the corresponding segment of bst.js
+*/
+
+@import url(http://fonts.googleapis.com/css?family=Press+Start+2P);
+
+
+
+body {
+	background-color: #000000;
+	color: #ececec;
+}
+
+article{
+padding-bottom: 35px;
+}
+
+.navbar {
+	border: 0px;
+	margin-bottom: 0px;
+}
+
+.navbar-default {
+	background-color: #052644;
+	margin-bottom: 0px;
+	font-family: 'Press Start 2P',cursive;
+	font-size:	12px;
+}
+
+.navbar-header{
+	float: left;
+}
+
+.navbar-toggle {
+	padding: 27px 23px;
+    position: absolute;
+    right: 1px;
+    top: 1px;
+    z-index: 1000;
+	margin: 0;
+	border: 0;
+	border-radius: 0px;
+	float: none;
+	background-color: #165e8a; 
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+	background-color: #052644;
+	border: 2px solid #ccc;
+	padding: 25px 21px;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+	background-color: #ccc;
+}
+
+.navbar .container {
+	float: left;
+	padding-left: 25px;
+}
+
+.navbar-box{
+	width: 70px;
+	height: 70px;
+	background-color: #165e8a;
+	position: relative;
+	float: right;
+}
+
+.navbar-site-title .navbar-box {
+	background-color: #9162b6;
+}
+
+.navbar-collapse{
+	float: right;
+	margin-right: 10px;
+}
+
+
+
+.navbar-default .navbar-nav>li>a {
+	color: #ccc;
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
+	color: #ccc;
+	font-weight: bold;
+	background-color: #052644;
+}
+
+.navbar-site-title
+{
+	color: #ccc;
+	background-color: #671b8d;
+	border-radius: 0px;
+}
+
+.navbar-site-title h2
+{
+	color: #ffffff;
+	font-size: 25px;
+	margin-top: 21px;
+	margin-bottom: 21px;
+	font-family: 'Press Start 2P',cursive;
+}
+
+.dropdown-menu {
+	background-color: #052644;
+	font-size:	10px;
+	border: 0;
+	left: -10px;
+	border-radius: 0px;
+}
+
+.dropdown-menu > li > a
+{
+	color: #ccc;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+  
+
+
+/*
+Max content widths
+*/
+.size-auto, 
+.size-full,
+.size-large,
+.size-medium,
+.size-thumbnail {
+	max-width: 100%;
+	height: auto
+}
+
+
+/*
+Header logo
+An example of how to use CSS to display an image as a background of an HTML element.
+*/
+
+
+.header-logo {
+	background-image: url("../img/s14_weblogo_small.png");
+	background-repeat: no-repeat;
+	width: 250px;
+	height: 39px;
+	display: block;
+	margin-top: 15px;
+	margin-left: 20px;
+}
+
+
+.poster{	
+	
+	background: url("../img/banneri.jpg") no-repeat bottom right; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	
+	font-family: 'Press Start 2P', cursive;
+	font-size: 23pt;
+	
+	padding-bottom: 100px;
+	padding-top: 150px;
+}
+
+@keyframes blink {  
+  0% { opacity: 1.0; }
+  50% { opacity: 0.0; }
+  100% { opacity: 1.0; }
+}
+@-webkit-keyframes blink {
+  0% { opacity: 1.0; }
+  50% { opacity: 0.0; }
+  100% { opacity: 1.0; }
+}
+
+.blink {
+	animation: blink 1.5s step-start 0s infinite;
+	-webkit-animation: blink 1.5s step-start 0s infinite;
+}
+
+.arrow-down {
+	/*width: 0; 
+	height: 0; 
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	
+	border-top: 50px solid #ececec;
+	
+	margin-left: auto;
+    margin-right: auto;*/
+    padding-top: 100px;
+	
+	
+}
+
+.arrow-layers{
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #ececec;
+}
+
+.layer-one{
+	width: 80px;
+	height: 15px;
+}
+
+.layer-two{
+	width: 60px;
+	height: 13px;
+}
+
+.layer-three{
+	width: 40px;
+	height: 13px;
+}
+
+.layer-four{
+	width: 18px;
+	height: 15px;
+}
+
+
+/*
+Sidebar
+*/
+
+.sidebar ul,
+.sidebar ol {
+  list-style-type: none;
+  padding: 0
+}
+.sidebar li {
+  margin: 10px 0
+}
+
+/*
+Footer
+*/
+
+.footer ul,
+.footer ol {
+  list-style-type: none;
+  padding: 0
+}
+.footer li {
+  margin: 10px 0
+}
+.sub-footer p {
+  text-align: center
+}
+
+
+.footer-widget {
+	background-color: #671b8d;
+	min-height: 70px;
+	width: 100%;
+}
+
+.footer {
+	background-color: #052644;
+	border-radius: 0px;
+	margin-bottom: 0px;
+	font-size: 9pt;
+}
+
+.footer a {
+	color: #ececec;
+}
+
+.footer .row {
+	float: left;
+	padding-top: 30px;
+	padding-left: 30px;
+}
+
+.footer-content {
+	float: left;
+	text-align: center;
+}
+
+/*
+Commentlist
+*/
+
+ol.commentlist {
+	counter-reset: li; /* Initiate a counter */
+	padding: 0
+}
+ol.commentlist ul {
+  padding: 0
+}
+ol.commentlist > li {
+	position: relative;
+	margin: 0 0 20px 0;
+	list-style: none /* Disable the normal item numbering */
+}
+ol.commentlist > li:before {
+  content: "Thread " counter(li); /* Use the counter as content */
+  counter-increment: li; /* Increment the counter by 1 */
+  position:absolute;  
+  top: 0;
+  right: 0;
+  border-bottom: 1px solid #ddd;
+  border-left: 1px solid #ddd;
+  border-bottom-left-radius: 4px;
+  padding: 5px 20px 5px 10px;
+  color: #999
+}
+ol.commentlist li ol,
+ol.commentlist li ul {
+  list-style-type: none;
+  margin: 0
+}
+
+.commentlist li li {
+  background: #f8f8f8;
+}
+.commentlist li li li {
+  background: #fff
+}
+.commentlist li li li li {
+  background: #f8f8f8
+}
+.commentlist li li li li li li {
+  background: #fff
+}
+.commentlist li {
+  padding: 20px
+}
+.commentlist ul li {
+  margin-top: 20px;
+  margin-bottom: 0
+}
+.reply p {
+  margin: 0
+}
+
+/*
+Woocommerce re-styling
+*/
+
+.woocommerce a:focus {
+  outline: none
+}
+.woocommerce .count {
+  background: inherit
+}
+.woocommerce .added_to_cart {
+  display: block !important
+}
+.woocommerce .woocommerce-error:before,
+.woocommerce .woocommerce-info:before,
+.woocommerce .woocommerce-message:before,
+.woocommerce-page .woocommerce-error:before,
+.woocommerce-page .woocommerce-info:before,
+.woocommerce-page .woocommerce-message:before {
+  padding-top: 0
+}
+
+@media (max-width: 949px) {
+	.navbar-nav .disabled {
+		display: none;
+	}
+	
+	.navbar-header{
+		float: none;
+		height: 70px;
+	}
+	
+	.navbar-collapse {
+		float: none;
+	}
+	
+	.navbar-box {
+		display: none;
+	}
+	
+	
+	.navbar-collapse{
+		width: 100%;
+		border-top: 2px solid #ccc;
+	}
+	
+	.poster {
+		padding-left: 10%;
+	}
+}
+
+@media (min-width: 950px) {
+
+	.navbar-default .navbar-nav>li>a
+	{
+		padding-left: 3px;
+		padding-right: 3px;
+		font-size: 9px;
+	}
+
+	.navbar-collapse.collapse {
+		color: red;
+	}
+  	
+	.navbar-nav .caret {
+		margin: 0px;
+		padding: 0px;
+		margin-left: -5px;
+	} 
+	
+	/* Delete the above if you wish to display the caret */
+	
+	
+	.navbar-nav .open ul {
+		display: none
+	}
+	.navbar-default .navbar-nav > .open > a,
+	.navbar-default .navbar-nav > .open > a:hover,
+	.navbar-default .navbar-nav > .open > a:focus {
+		color: #555;
+		background: none
+	}
+	.navbar-inverse .navbar-nav > .open > a,
+	.navbar-inverse .navbar-nav > .open > a:hover,
+	.navbar-inverse .navbar-nav > .open > a:focus {
+		color: #969696;
+		background: none
+	}
+	.navbar-nav .hovernav:hover > .dropdown-menu {
+		display: block
+	}
+  
+
+}
+
+@media (min-width: 1025px) {
+	.navbar-default .navbar-nav>li>a
+	{
+		padding-left: 5px;
+		padding-right: 5px;
+		font-size: 10px;
+	}
+
+}
+
+
+@media (min-width: 1180px) {
+
+  
+	.navbar-default .navbar-nav>li>a
+	{
+		padding-left: 5px;
+		padding-right: 5px;
+		font-size: 11px;
+	}
+	
+	
+	.header-logo {
+	
+		background-image: url("../img/s14_weblogo.png");
+		width: 317px;
+		height: 50px;
+		margin-top: 10px;
+		margin-left: 20px;
+	}
+    
+	
+
+}
+
+@media (min-width: 1279px) {
+
+	.poster {
+		font-size: 33pt;
+	}
+	
+	.navbar-default .navbar-nav>li>a
+	{
+		padding-left: 5px;
+		padding-right: 5px;
+		font-size: 12px;
+	}
+	
+	.navbar-collapse
+	{
+		margin-right: 20px;
+	}
+	
+
+
+}
+
+@media (min-width: 1481px) {
+
+	.poster {
+		padding-top: 200px;
+		padding-bottom: 400px;
+		font-size: 43pt;
+	}
+	
+	.navbar-default .navbar-nav>li>a
+	{
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	
+}
