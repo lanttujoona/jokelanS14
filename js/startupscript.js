@@ -35,11 +35,6 @@
   $('select, input[type=text], input[type=email], input[type=password], textarea').addClass('form-control');
   $('input[type=submit]').addClass('btn btn-primary');
 
-  	/*
-	Woocommerce re-styling
-	*/
-  $('div.woocommerce').wrapInner('<article></article>');
-
   
 	/* Main page Arrow animation */
 	

@@ -343,27 +343,6 @@ ol.commentlist li ul {
   margin: 0
 }
 
-/*
-Woocommerce re-styling
-*/
-
-.woocommerce a:focus {
-  outline: none
-}
-.woocommerce .count {
-  background: inherit
-}
-.woocommerce .added_to_cart {
-  display: block !important
-}
-.woocommerce .woocommerce-error:before,
-.woocommerce .woocommerce-info:before,
-.woocommerce .woocommerce-message:before,
-.woocommerce-page .woocommerce-error:before,
-.woocommerce-page .woocommerce-info:before,
-.woocommerce-page .woocommerce-message:before {
-  padding-top: 0
-}
 
 @media (max-width: 949px) {
 	.navbar-nav .disabled {
@@ -413,29 +392,6 @@ Woocommerce re-styling
 		margin-left: -5px;
 	} 
 	
-	/* Delete the above if you wish to display the caret */
-	
-	
-	.navbar-nav .open ul {
-		display: none
-	}
-	.navbar-default .navbar-nav > .open > a,
-	.navbar-default .navbar-nav > .open > a:hover,
-	.navbar-default .navbar-nav > .open > a:focus {
-		color: #555;
-		background: none
-	}
-	.navbar-inverse .navbar-nav > .open > a,
-	.navbar-inverse .navbar-nav > .open > a:hover,
-	.navbar-inverse .navbar-nav > .open > a:focus {
-		color: #969696;
-		background: none
-	}
-	.navbar-nav .hovernav:hover > .dropdown-menu {
-		display: block
-	}
-  
-
 }
 
 @media (min-width: 1025px) {
