@@ -30,25 +30,5 @@ This theme has been built for use as a starter theme and as a learning aid for p
 
 The navbar has some modifications that make the dropdown menu appear on hover (in `bst.js` plus `bst.css`). *The Bootstrap js and css have not been changed*. You can easily delete the "hovernav" segments of bst.js and bst.css if you don't want them. 
 
-##Notes on WooCommerce support
 
-* You will need to install the WooCommerce plugin - http://wordpress.org/plugins/woocommerce/
-* I have included the *minimum* additions to BST to make WooCommerce work (this is a starter theme). It will work fine with these minimum additions, but you can add more style and improve the layout.
-* WooCommerce uses WooCommerce-styled buttons, icons, etc. in its shop, cart, checkout etc. - these are not the same as the Bootstrap buttons, icons etc. I have not replaced the WooCommerce buttons with Bootstrap buttons, because that would mean that you have no control over the appearance of these buttons from within the WooCommerce plugin settings.
-* However I have applied Bootstrap styling to the cart and checkout forms, using jQuery insertion of Bootstrap CSS classes.
-* You will need to add a "Shop" link, e.g. to your primary menu
-* You will need to add some WooCommerce Widgets to the sidebar (at minimum, WooCommerce Cart and WooCommerce Categories)
-* And, of course, you will need to add salable items to your shop, and set up your payment gateway.
-
-Find out more about WooCommerce here: http://www.woothemes.com/woocommerce/
-
-###What if you don't want WooCommerce support in BST?
-
-Simply delete or remove these things that you won't be needing:
-
-* **Remove:** woocommerce.php .
-* **Remove:** /func/woocommerce-setup.php .
-* **Delete:** in /func/setup.php, scroll to the bottom and delete the line
-`add_theme_support('woocommerce');`
-* **Delete:** in /css/bst.css, scroll to the bottom and delete all the `.woocommerce` styles.
-* **Delete:** in /js/bst.css, scroll to the bottom and delete all that has to do with WooCommerce.
+Terveisin Joona
