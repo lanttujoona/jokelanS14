@@ -22,7 +22,7 @@ Template Name: Search Page
 <div class="container">
   <div class="row">
     
-    <div class="col-xs-12 col-sm-8">
+    <div class="col-xs-12 col-sm-9">
       <div id="content" role="main">
         <h2>Search Results for &ldquo;<?php the_search_query(); ?>&rdquo;</h2>
         <hr/>
@@ -43,7 +43,7 @@ Template Name: Search Page
       </div><!-- /#content -->
     </div>
     
-    <div class="col-xs-6 col-sm-4" id="sidebar" role="navigation">
+    <div class="col-xs-6 col-sm-3" id="sidebar" role="navigation">
         <?php get_template_part('parts/sidebar'); ?>
     </div>
     

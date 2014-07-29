@@ -17,7 +17,6 @@
 <![endif]-->    
 
 <nav class="navbar navbar-default navbar-static-top" role="navigation">
-<!--  <div class="container"> -->
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".upper-navbar">
         <span class="sr-only">Toggle navigation</span>
@@ -26,23 +25,10 @@
         <span class="icon-bar"></span>
       </button>
       <span class="header-logo"></span>
-    </div><!-- /.navbar-header -->
-		<div class="navbar-box">
+    </div>
+	<div class="navbar-box">
   	</div>
-    <!-- <div class="collapse navbar-collapse upper-navbar">    -->
       <?php			
-      	/*
-      	// Alkuperainen menu	
-          $args = array(
-            'theme_location' => 'upper-bar',
-            'depth' => 0,
-            'container'	=> false,
-            'fallback_cb' => false,
-            'menu_class' => 'nav navbar-nav',
-            'walker' => new BootstrapNavMenuWalker()
-          );
-          wp_nav_menu($args);
-        */
         wp_nav_menu( array(
         	'menu'              => 'primary',
         	'theme_location'    => 'primary',
@@ -54,10 +40,6 @@
         	'walker'            => new wp_bootstrap_navwalker())
     	);
       ?>
-	  <!--  </div> /.navbar-collapse -->
-
- <!-- </div> -->
-
   
 </nav>
 
