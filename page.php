@@ -15,7 +15,6 @@
 
 <div class="container">
   <div class="row">
-Zau
     <div class="col-xs-12 col-sm-9">
       <div id="content" role="main">
         <?php if(have_posts()): while(have_posts()): the_post();?>
