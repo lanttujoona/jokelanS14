@@ -47,8 +47,8 @@
             </h4>
           </header>
 		  
-		  <?php $img_url = wp_get_attachment_image_src(get_post_thumbnail_id(),'kev-feature'); ?>
-		  <div class="article-feature-image"><img src="<?php echo $img_url;?>" alt="" /></div>
+		  <?php $feature_img = wp_get_attachment_image_src(get_post_thumbnail_id(),'kev-feature'); ?>
+		  <div class="article-feature-image"><img src="<?php echo $feature_img[0];?>" alt="" /></div>
           <?php //the_post_thumbnail(); ?>		
           <?php the_content( __( 'Lue lis&auml;&auml; &hellip;', 'bst' ) ); ?>
           <p class="text-muted" style="margin-bottom: 20px;">
