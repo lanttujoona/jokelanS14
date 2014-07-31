@@ -18,6 +18,13 @@ article{
 padding-bottom: 35px;
 }
 
+#news article {
+	float: left;
+	width: 28%;
+	margin-right: 10px;
+	padding-right: 10px;
+}
+
 #scrolltarget {
 	position: relative;
 	top: -70px;

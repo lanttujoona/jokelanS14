@@ -46,10 +46,15 @@
               </em>
             </h4>
           </header>
-          <?php the_post_thumbnail(); ?>
-          <?php the_content( __( '&hellip; Continue reading <i class="glyphicon glyphicon-arrow-right"></i>', 'bst' ) ); ?>
+          <?php //the_post_thumbnail(); ?>
+		  <?php
+				if( function_exists( 'the_responsive_featured_image' ) ) {
+					 echo the_responsive_featured_image();
+				}
+			?>
+          <?php the_content( __( 'Lue lis&auml;&auml; &hellip;', 'bst' ) ); ?>
           <p class="text-muted" style="margin-bottom: 20px;">
-            <i class="glyphicon glyphicon-folder-open"></i>&nbsp; Filed under: <?php _e(''); ?> <?php the_category(', ') ?><br/>
+            <i class="glyphicon glyphicon-folder-open"></i>&nbsp;<?php _e(''); ?> <?php the_category(', ') ?><br/>
             <i class="glyphicon glyphicon-comment"></i>&nbsp; Comments: <?php comments_popup_link('None', '1', '%'); ?>
           </p>
           <hr/>
