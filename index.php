@@ -46,7 +46,10 @@
               </em>
             </h4>
           </header>
-          <?php the_post_thumbnail(); ?>		
+		  
+		  <?php $img_url = wp_get_attachment_image_src(get_post_thumbnail_id(),'kev-feature'); ?>
+		  <div class="article-feature-image"><img src="<?php echo $img_url;?>" alt="" /></div>
+          <?php //the_post_thumbnail(); ?>		
           <?php the_content( __( 'Lue lis&auml;&auml; &hellip;', 'bst' ) ); ?>
           <p class="text-muted" style="margin-bottom: 20px;">
             <i class="glyphicon glyphicon-folder-open"></i>&nbsp;<?php _e(''); ?> <?php the_category(', ') ?><br/>
