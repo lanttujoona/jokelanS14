@@ -46,12 +46,7 @@
               </em>
             </h4>
           </header>
-          <?php //the_post_thumbnail(); ?>
-		  <?php
-				if( function_exists( 'the_responsive_featured_image' ) ) {
-					 echo the_responsive_featured_image();
-				}
-			?>
+          <?php the_post_thumbnail(); ?>		
           <?php the_content( __( 'Lue lis&auml;&auml; &hellip;', 'bst' ) ); ?>
           <p class="text-muted" style="margin-bottom: 20px;">
             <i class="glyphicon glyphicon-folder-open"></i>&nbsp;<?php _e(''); ?> <?php the_category(', ') ?><br/>
