@@ -125,6 +125,10 @@ padding-bottom: 35px;
 	padding-top: 70px;
 }
 
+#news nav {
+	padding-top: 0px;
+}
+
 .navbar-site-title h2
 {
 	color: #ffffff;
