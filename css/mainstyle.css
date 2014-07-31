@@ -23,6 +23,10 @@ padding-bottom: 35px;
 	top: -55px;
 }
 
+#content {
+	margin-top: 20px;
+}
+
 .navbar {
 	border: 0px;
 	margin-bottom: 0px;
@@ -118,6 +122,7 @@ padding-bottom: 35px;
 	color: #ccc;
 	background-color: #671b8d;
 	border-radius: 0px;
+	padding-top: 70px;
 }
 
 .navbar-site-title h2
@@ -522,9 +527,9 @@ ol.commentlist li ul {
 
 	.navbar-default .navbar-nav>li>a
 	{
-		padding-left: 3px;
-		padding-right: 3px;
-		font-size: 9px;
+		padding-left: 2px;
+		padding-right: 2px;
+		font-size: 8px;
 	}
 
 	.navbar-collapse.collapse {
@@ -542,14 +547,18 @@ ol.commentlist li ul {
 		padding-top: 20px;
 	}
 	
+	.page article {
+		min-height: 500px;
+	}
+	
 }
 
 @media (min-width: 1025px) {
 	.navbar-default .navbar-nav>li>a
 	{
-		padding-left: 5px;
-		padding-right: 5px;
-		font-size: 10px;
+		padding-left: 2px;
+		padding-right: 2px;
+		font-size: 9px;
 	}
 
 }
@@ -560,9 +569,9 @@ ol.commentlist li ul {
   
 	.navbar-default .navbar-nav>li>a
 	{
-		padding-left: 5px;
-		padding-right: 5px;
-		font-size: 11px;
+		padding-left: 3px;
+		padding-right: 4px;
+		font-size: 10px;
 	}
 	
 	
@@ -586,7 +595,7 @@ ol.commentlist li ul {
 	{
 		padding-left: 5px;
 		padding-right: 5px;
-		font-size: 12px;
+		font-size: 11.5px;
 	}
 	
 	.navbar-collapse
