@@ -36,7 +36,7 @@
     <div class="col-xs-12 col-sm-9" >
       <div id="content" role="main" >
         <?php if(have_posts()): while(have_posts()): the_post();?>
-        <article role="article" id="post_<?php the_ID()?>">
+        <article role="article" id="post_<?php the_ID()?>" class="article-frontpage">
           <header>
             <h2><a href="<?php the_permalink(); ?>"><?php the_title()?></a></h2>
             <h4>
