@@ -71,18 +71,19 @@ padding-bottom: 35px;
 
 .sponsor-row {
 	min-height: 150px;
+	float: left;
 }
 
 .sponsor-left{
 	float: left;
-	width: 32%;
+	width: 24%;
 	margin-right: 10px;
 	min-height: 100px;
 }
 
 .sponsor-right{
 	float: left;
-	width: 65%;
+	width: 74%;
 }
 
 #scrolltarget {
