@@ -31,19 +31,22 @@
 	
   	</div>
 </nav>
-<div class="container">
+<div class="container" >
   <div class="row row-offcanvas">
     <div class="col-xs-12 col-sm-9" >
-      <div id="content" role="main" >
-        <?php if(have_posts()): while(have_posts()): the_post();?>
-        <article role="article" id="post_<?php the_ID()?>" class="article-frontpage">
+      <div id="content" role="main" style="margin: 5px;" >
+        <?php $post_counter = 0; if(have_posts()): while(have_posts()): the_post();?>
+        <article role="article" id="post_<?php the_ID()?>" class="article-frontpage" style="background-color: <?php if($post_counter % 2 == 0){ echo "#212121";}else{ echo "#414141";} $post_counter++; ?>";>
           <header>
             <h2><a href="<?php the_permalink(); ?>"><?php the_title()?></a></h2>
             <h4>
-              <em>
-                <span class="text-muted" class="author">By <?php the_author() ?>,</span>
-                <time  class="text-muted" datetime="<?php the_time('d-m-Y')?>"><?php the_time('jS F Y') ?></time>
-              </em>
+				<span>
+					<i class="glyphicon glyphicon-pencil"></i>&nbsp;&nbsp;<?php the_author() ?>,
+					<time  class="text-muted" datetime="<?php the_time('d-m-Y')?>"><?php the_time('d.m.Y') ?></time>
+				</span>
+				<span>
+					<i class="glyphicon glyphicon-screenshot"></i>&nbsp;<?php _e(''); ?> <?php the_category(', ') ?>
+				</span>
             </h4>
           </header>
 		  
@@ -51,11 +54,10 @@
 		  <div class="article-feature-image"><img src="<?php echo $feature_img[0];?>" alt="" /></div>
           <?php //the_post_thumbnail(); ?>		
           <?php the_content( __( 'Lue lis&auml;&auml; &hellip;', 'bst' ) ); ?>
-          <p class="text-muted" style="margin-bottom: 20px;">
-            <i class="glyphicon glyphicon-folder-open"></i>&nbsp;<?php _e(''); ?> <?php the_category(', ') ?><br/>
-            <i class="glyphicon glyphicon-comment"></i>&nbsp; Comments: <?php comments_popup_link('None', '1', '%'); ?>
+          <p class="text-muted" >
+            
+            <!--<i class="glyphicon glyphicon-comment"></i>&nbsp; Comments: <?php comments_popup_link('None', '1', '%'); ?>-->
           </p>
-          <hr/>
         </article>
         <?php endwhile; ?>
         <ul class="pagination">
