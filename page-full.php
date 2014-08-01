@@ -3,7 +3,9 @@
 Template Name: Kokolevee
 */
 
-<?php get_template_part('parts/header'); ?>
+get_template_part('parts/header'); 
+
+?>
 
 <nav class="navbar navbar-site-title">
   	<div class="container">
