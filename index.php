@@ -5,7 +5,7 @@
 	<div class="container">
 		<div class="row row-offcanvas">
 			JOKE-LAN S14<br>
-			17.-19.10.2014<br>
+			17.-19.10.14<br>
 			JOKELAN KOULUKESKUS<br><br>
 			<div class="typewriter" style="float: left;"></div><span class="blink" style="float: left;">_</span><br>
 			

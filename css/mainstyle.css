@@ -69,11 +69,9 @@ padding-bottom: 35px;
 	color: #ffffff;
 }
 
-.article
-
 #scrolltarget {
 	position: relative;
-	top: -70px;
+	top: -55px;
 }
 
 #content {
@@ -228,9 +226,9 @@ An example of how to use CSS to display an image as a background of an HTML elem
 
 
 .header-logo {
-	background-image: url("../img/s14_weblogo_small.png");
+	background-image: url("../img/s14_weblogo_smaller.png");
 	background-repeat: no-repeat;
-	width: 250px;
+	width: 215px;
 	height: 39px;
 	display: block;
 	margin-top: 15px;
@@ -566,7 +564,8 @@ ol.commentlist li ul {
 	}
 	
 	.poster {
-		padding-left: 10%;
+		padding-left: 5%;
+		font-size: 20pt;
 	}
 	
 	.footer {
@@ -578,10 +577,39 @@ ol.commentlist li ul {
 		padding-top: 10px;
 	}
 	
+	.article-frontpage {
+		float: left;
+		
+		min-height: 515px;
+		padding-bottom: 0px;
+		
+		width: 100%;
+		margin-bottom: 15px;
+	}
+	
+	
+	.article-feature-image img {
+		max-width: 900px;
+	}
+	
+	
+	.sidebar {
+		display: none;
+	}
+	
+	
+	
+	
 }
 
 @media (min-width: 950px) {
-
+	
+	.header-logo {
+		background-image: url("../img/s14_weblogo_small.png");
+		width: 250px;
+	}
+	
+	
 	.navbar-default .navbar-nav>li>a
 	{
 		padding-left: 2px;
