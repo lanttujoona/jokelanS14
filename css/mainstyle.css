@@ -623,12 +623,18 @@ ol.commentlist li ul {
 	}
 	
 	
+	.sponsor-row {
+		min-height: none;
+	}
+	
 	.sponsor-left{
 		width: 100%;
+		min-height: none;
 	}
 
 	.sponsor-left{
 		width: 100%;
+		min-height: none;
 	}
 
 	
