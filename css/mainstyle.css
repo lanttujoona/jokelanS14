@@ -69,6 +69,21 @@ padding-bottom: 35px;
 	color: #ffffff;
 }
 
+.sponsor-row {
+	min-height: 100px;
+}
+
+.sponsor-left{
+	float: left;
+	width: 32%;
+	margin-right: 10px;
+}
+
+.sponsor-left{
+	float: left;
+	width: 65%;
+}
+
 #scrolltarget {
 	position: relative;
 	top: -55px;
@@ -605,6 +620,16 @@ ol.commentlist li ul {
 	.footer-widget h3 {
 		font-size: 18px;
 	}
+	
+	
+	.sponsor-left{
+		width: 100%;
+	}
+
+	.sponsor-left{
+		width: 100%;
+	}
+
 	
 	
 	
