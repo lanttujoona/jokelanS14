@@ -15,7 +15,12 @@ body {
 }
 
 article{
-padding-bottom: 35px;
+	padding-bottom: 35px;
+}
+
+header>h4>span {
+	float: left;
+	width: 100%;
 }
 
 

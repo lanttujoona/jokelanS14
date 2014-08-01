@@ -33,7 +33,6 @@
           </header>
           <?php //the_post_thumbnail(); ?>
           <?php the_content()?>
-          <hr/>
         </article>
         <?php //comments_template('/parts/comments.php'); ?>
         <?php endwhile; ?>
