@@ -565,7 +565,7 @@ ol.commentlist li ul {
 	
 	.poster {
 		padding-left: 5%;
-		font-size: 20pt;
+		font-size: 19pt;
 	}
 	
 	.footer {
@@ -595,6 +595,11 @@ ol.commentlist li ul {
 	
 	.sidebar {
 		display: none;
+	}
+	
+	.navbar-site-title h2 {
+		font-size: 20px;
+		padding-left: 5%;
 	}
 	
 	
