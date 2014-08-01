@@ -70,16 +70,17 @@ padding-bottom: 35px;
 }
 
 .sponsor-row {
-	min-height: 100px;
+	min-height: 150px;
 }
 
 .sponsor-left{
 	float: left;
 	width: 32%;
 	margin-right: 10px;
+	min-height: 100px;
 }
 
-.sponsor-left{
+.sponsor-right{
 	float: left;
 	width: 65%;
 }
