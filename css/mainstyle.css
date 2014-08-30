@@ -666,7 +666,10 @@ ol.commentlist li ul {
 	}
 
 	
-	
+	.navbar-default .navbar-nav > li > a {
+		padding-bottom: 10px;
+		padding-top: 10px;
+	}
 	
 }
 
