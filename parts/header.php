@@ -24,7 +24,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <span class="header-logo"></span>
+      <a href="/"><span class="header-logo"></span></a>
     </div>
 	<div class="navbar-box">
   	</div>
