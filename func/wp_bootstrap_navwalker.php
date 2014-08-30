@@ -36,7 +36,8 @@ class wp_bootstrap_navwalker extends Walker_Nav_Menu {
 	 */
 	public function start_el( &$output, $item, $depth = 0, $args = array(), $id = 0 ) {
 		$indent = ( $depth ) ? str_repeat( "\t", $depth ) : '';
-
+		$isMobile = (bool)preg_match('#\b(ip(hone|od|ad)|android|opera m(ob|in)i|windows (phone|ce)|blackberry|tablet|s(ymbian|eries60|amsung)|p(laybook|alm|rofile/midp|laystation portable)|nokia|fennec|htc[\-_]|mobile|up\.browser|[1-4][0-9]{2}x[1-4][0-9]{2})\b#i', $_SERVER['HTTP_USER_AGENT'] );
+		
 		/**
 		 * Dividers, Headers or Disabled
 		 * =============================
@@ -83,7 +84,7 @@ class wp_bootstrap_navwalker extends Walker_Nav_Menu {
 			// If item has_children add atts to a.
 			if ( $args->has_children && $depth === 0 ) {
 				$atts['href']   		= '#';
-				if(!strpos($_SERVER['HTTP_USER_AGENT'],"Android")){
+				if(!$isMobile){
 					$atts['data-hover']		= 'dropdown';
 				}				
 				$atts['data-toggle']	= 'dropdown';
